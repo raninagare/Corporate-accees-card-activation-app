@@ -53,7 +53,7 @@
          * @return
          */
         @RequestMapping(value = "/loginwithface", method = RequestMethod.POST, consumes = MediaType.ALL_VALUE)
-        public boolean validateUserByFace(@RequestParam("name") String userName,
+        public boolean validateUserByFace(@RequestParam("userName") String userName,
                                           @RequestParam("file") MultipartFile file){
 
             try {
