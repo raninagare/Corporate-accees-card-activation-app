@@ -85,6 +85,9 @@ class AppNavbar extends Component<INavbarProps, IState> {
                             <DropdownItem href="/validate" className="text-primary">
                                 Validate ID
                             </DropdownItem>
+                            <DropdownItem href="/validate-photo" className="text-primary">
+                                Validate Photo
+                            </DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem onClick={() => this.logoutUser()} className="text-primary">
                                 Logout
