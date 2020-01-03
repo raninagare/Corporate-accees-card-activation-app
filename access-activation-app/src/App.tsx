@@ -19,6 +19,7 @@ import unauthorized from './views/Unauthorized';
 import UserProfile from './views/UserProfile';
 import ValidateID from "./components/auth/ValidateID";
 import ValidatePhoto from './components/auth/ValidatePhoto';
+import RegisterImage from './components/auth/RegisterImage';
 
 
 // Icons
@@ -52,7 +53,8 @@ class App extends Component<IAppProps, IAppState> {
             <Route path="/unauthorized" exact component={unauthorized} />
             <Route path="/login" exact component={AppLogin} />
             <Route path="/register" exact component={RegisterEmployee} />
-            <PrivateRoute path="/validate-photo" exact component={ValidatePhoto} />
+            <PrivateRoute path="/validate-photo" accessToken={this.props.auth.accessToken} exact component={ValidatePhoto} />
+            <PrivateRoute path="/register-photo" accessToken={this.props.auth.accessToken} exact component={RegisterImage} />
             <PrivateRoute path="/dashboard" accessToken={this.props.auth.accessToken} exact component={Dashboard}/>
             <PrivateRoute path="/profile" accessToken={this.props.auth.accessToken} exact component={UserProfile}/>
             <PrivateRoute path="/validate" accessToken={this.props.auth.accessToken} exact component={ValidateID}/>

@@ -1,6 +1,5 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useRef, useEffect } from 'react';
 import { Card, CardBody, Form, FormGroup, Label, Input, Button, CardTitle, CardHeader, FormFeedback } from 'reactstrap';
-
 import '../../assets/styles/auth/register.scss';
 import { registerEmployee } from '../../services/auth.service';
 
@@ -105,6 +104,7 @@ export const Register = (props: IRegisterProps) => {
         const reValidEmail = new RegExp(sValidEmail);
         return reValidEmail.test(email);
     }
+
 
     return (
         <Fragment>

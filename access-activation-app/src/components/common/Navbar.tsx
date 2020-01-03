@@ -82,6 +82,9 @@ class AppNavbar extends Component<INavbarProps, IState> {
                             <DropdownItem href="/profile" className="text-primary">
                                 User Profile
                             </DropdownItem>
+                            <DropdownItem href="/register-photo" className="text-primary">
+                            Register Image
+                        </DropdownItem>
                             <DropdownItem href="/validate" className="text-primary">
                                 Validate ID
                             </DropdownItem>
