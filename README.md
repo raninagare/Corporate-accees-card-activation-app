@@ -43,7 +43,7 @@ It will open the app view in the browser at
 <img src="snapshots/generate Id.png" width="100%" >
 
 ### 4. Generate Id for Visitor
-<img src="snapshots/generateVisitorId.png" width="100%" >
+<img src="snapshots/generateVisitorID.png" width="100%" >
 
 ### 5. Validation using face recognition
 <img src="snapshots/face registration.png" width="100%" >
